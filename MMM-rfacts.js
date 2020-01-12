@@ -63,20 +63,11 @@ Module.register("MMM-rfacts", {
             return wrapper;
         }
 
-        var top = document.createElement("div");
-
-
-        var title = document.createElement("div");
-        title.classList.add("xsmall", "bright", "title");
-        title.innerHTML = this.translate("Random Fact");
-        top.appendChild(title);
-
         var des = document.createElement("div");
         des.classList.add("small", "bright", "description");
 		des.innerHTML = fact;
-        top.appendChild(des);
 
-        wrapper.appendChild(top);
+        wrapper.appendChild(des);
         return wrapper;
 
     },
